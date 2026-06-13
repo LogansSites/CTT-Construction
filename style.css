@@ -707,6 +707,188 @@ h3 { font-size: 1.2rem; font-weight: 700; }
 }
 
 /* ===========================
+   FEATURED PRODUCTS
+   =========================== */
+.featured-products { background: var(--navy-dark); }
+.featured-products .section-eyebrow { color: var(--gold); }
+.featured-products h2 { color: var(--white); }
+.featured-products .section-sub { color: rgba(255,255,255,.65); }
+
+.fp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+.fp-card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(201,168,76,.2);
+  border-radius: 12px;
+  padding: 28px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: var(--transition);
+}
+.fp-card:hover {
+  background: rgba(255,255,255,.1);
+  border-color: var(--gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,.3);
+}
+.fp-highlight {
+  border-color: var(--gold);
+  background: rgba(201,168,76,.08);
+}
+.fp-badge-wrap { min-height: 24px; }
+.fp-badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-size: .72rem;
+  font-weight: 800;
+  padding: 3px 12px;
+  border-radius: 100px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.fp-badge-blue { background: var(--navy-mid); color: var(--white); }
+.fp-badge-green { background: #15803d; color: var(--white); }
+.fp-icon { font-size: 2.2rem; }
+.fp-card h3 { color: var(--white); font-size: 1.1rem; margin: 0; }
+.fp-brand { color: var(--gold); font-size: .8rem; font-weight: 600; letter-spacing: .04em; }
+.fp-card > p { color: rgba(255,255,255,.7); font-size: .92rem; line-height: 1.65; flex: 1; }
+.fp-features {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.fp-features li { color: rgba(255,255,255,.65); font-size: .85rem; }
+
+/* ===========================
+   MATERIAL BROWSER
+   =========================== */
+.material-browser { background: var(--off-white); }
+
+.tab-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+.tab-btn {
+  padding: 10px 22px;
+  border-radius: 100px;
+  border: 2px solid var(--light-gray);
+  background: var(--white);
+  color: var(--gray);
+  font-size: .9rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.tab-btn:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+.tab-btn.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(14,40,96,.25);
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.material-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 8px;
+}
+.material-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 1px solid var(--light-gray);
+}
+.material-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gold);
+}
+.material-swatch {
+  width: 100%;
+  height: 100px;
+}
+
+/* Roofing swatches */
+.swatch-charcoal  { background: linear-gradient(135deg, #2d2d2d 25%, #4a4a4a 50%, #2d2d2d 75%); background-size: 8px 8px; }
+.swatch-wood      { background: linear-gradient(135deg, #6b4c2a 25%, #8b6340 50%, #6b4c2a 75%); background-size: 8px 8px; }
+.swatch-metal     { background: linear-gradient(180deg, #8a9ba8 0%, #b0bec5 40%, #78909c 60%, #8a9ba8 100%); }
+.swatch-slate     { background: linear-gradient(135deg, #546e7a 25%, #78909c 50%, #546e7a 75%); background-size: 8px 8px; }
+
+/* Siding swatches */
+.swatch-vinyl-white  { background: repeating-linear-gradient(180deg, #e8edf2 0px, #e8edf2 18px, #cdd5de 18px, #cdd5de 22px); }
+.swatch-lp           { background: repeating-linear-gradient(180deg, #c4975a 0px, #c4975a 18px, #a87c45 18px, #a87c45 22px); }
+.swatch-insulated    { background: repeating-linear-gradient(180deg, #d4dce8 0px, #d4dce8 18px, #b8c4d4 18px, #b8c4d4 22px); }
+.swatch-soffit       { background: linear-gradient(135deg, #c8d0da 0%, #dde4ec 50%, #c8d0da 100%); }
+
+/* Decking swatches */
+.swatch-trex             { background: repeating-linear-gradient(90deg, #7d5a3c 0px, #7d5a3c 12px, #6b4c2e 12px, #6b4c2e 16px); }
+.swatch-pressure-treated { background: repeating-linear-gradient(90deg, #5a7a45 0px, #5a7a45 12px, #4a6a35 12px, #4a6a35 16px); }
+.swatch-cedar            { background: repeating-linear-gradient(90deg, #c47840 0px, #c47840 12px, #b06830 12px, #b06830 16px); }
+.swatch-vinyl-deck       { background: linear-gradient(135deg, #f0f4f8 0%, #dde3ea 50%, #f0f4f8 100%); }
+
+/* Gutter swatches */
+.swatch-seamless   { background: linear-gradient(180deg, #9eb0c0 0%, #b8ccd8 40%, #7a96aa 100%); }
+.swatch-copper     { background: linear-gradient(135deg, #b87333 0%, #cd8b3a 40%, #a0652a 70%, #b87333 100%); }
+.swatch-gutter-guard { background: repeating-linear-gradient(45deg, #888 0px, #888 2px, #aaa 2px, #aaa 8px); }
+.swatch-downspout  { background: linear-gradient(180deg, #8090a0 0%, #a0b0c0 50%, #7080a0 100%); }
+
+/* Fencing swatches */
+.swatch-vinyl-fence { background: repeating-linear-gradient(90deg, #f5f5f5 0px, #f5f5f5 14px, #ddd 14px, #ddd 16px); }
+.swatch-wood-fence  { background: repeating-linear-gradient(90deg, #8b5e3c 0px, #8b5e3c 14px, #7a4f2e 14px, #7a4f2e 16px); }
+.swatch-chain       { background: repeating-linear-gradient(45deg, #999 0px, #999 2px, transparent 2px, transparent 8px), repeating-linear-gradient(-45deg, #999 0px, #999 2px, transparent 2px, transparent 8px); background-color: #ccc; }
+.swatch-picket      { background: repeating-linear-gradient(90deg, #f0ece6 0px, #f0ece6 10px, #d9d2c8 10px, #d9d2c8 14px); }
+
+.material-info {
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.material-info h4 { font-size: 1rem; color: var(--navy-dark); font-weight: 700; }
+.material-info p  { color: var(--gray); font-size: .875rem; line-height: 1.55; }
+.material-tag {
+  display: inline-block;
+  background: var(--off-white);
+  border: 1px solid var(--light-gray);
+  color: var(--navy);
+  font-size: .72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-top: 4px;
+  letter-spacing: .04em;
+}
+.material-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+.material-cta p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy-dark);
+  margin-bottom: 18px;
+}
+
+/* ===========================
    STICKY CALL BAR (mobile)
    =========================== */
 .sticky-call {
