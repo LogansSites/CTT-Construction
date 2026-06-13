@@ -16,7 +16,19 @@
   <header class="nav-wrap" id="nav">
     <div class="container nav-inner">
       <a class="logo" href="#hero">
-        <span class="logo-ctt">CTT</span><span class="logo-rest"> Construction LLC</span>
+        <!-- SVG recreation of CTT logo mark -->
+        <svg class="logo-icon" viewBox="0 0 52 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="26,2 50,20 2,20" fill="none" stroke="#c9a84c" stroke-width="2.5"/>
+          <rect x="8" y="19" width="36" height="22" fill="none" stroke="#c9a84c" stroke-width="2"/>
+          <rect x="22" y="28" width="8" height="13" fill="#c9a84c"/>
+          <rect x="10" y="23" width="8" height="7" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+          <rect x="34" y="23" width="8" height="7" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+          <line x1="22" y1="28" x2="30" y2="28" stroke="#c9a84c" stroke-width="1.5"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-ctt">C.T.T.</span>
+          <span class="logo-rest">Construction LLC</span>
+        </div>
       </a>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -35,6 +47,16 @@
   <section class="hero" id="hero">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
+      <div class="hero-logo-block">
+        <svg class="hero-logo-svg" viewBox="0 0 52 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="26,2 50,20 2,20" fill="none" stroke="#c9a84c" stroke-width="2.5"/>
+          <line x1="26" y1="2" x2="26" y2="8" stroke="#c9a84c" stroke-width="2"/>
+          <rect x="8" y="19" width="36" height="22" fill="none" stroke="#c9a84c" stroke-width="2"/>
+          <rect x="22" y="28" width="8" height="13" fill="#c9a84c"/>
+          <rect x="10" y="23" width="8" height="7" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+          <rect x="34" y="23" width="8" height="7" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+        </svg>
+      </div>
       <p class="hero-eyebrow">Madisonville, KY &amp; Surrounding Areas</p>
       <h1>Quality Work.<br/>Honest Pricing.<br/><span class="accent">Real Results.</span></h1>
       <p class="hero-sub">Licensed &amp; insured home improvement contractor specializing in roofing, siding, decks, remodeling &amp; more. High-end craftsmanship — no shortcuts.</p>
@@ -91,22 +113,17 @@
         <div class="service-card">
           <div class="service-icon">🏠</div>
           <h3>Roofing</h3>
-          <p>Full replacements, repairs, and inspections. We use high-quality materials built to protect your home for decades.</p>
+          <p>Full replacements, repairs, and inspections. High-quality materials built to protect your home for decades.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🏗️</div>
           <h3>Siding</h3>
-          <p>Vinyl, fiber cement, and more. New siding dramatically improves curb appeal and energy efficiency.</p>
+          <p>Vinyl and more. New siding dramatically improves curb appeal and energy efficiency.</p>
         </div>
         <div class="service-card">
-          <div class="service-icon">🌿</div>
-          <h3>Decks &amp; Outdoor</h3>
-          <p>Custom-built decks and outdoor living spaces crafted to maximize your enjoyment and home value.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🪟</div>
-          <h3>Windows</h3>
-          <p>Window replacements and installations that improve insulation, curb appeal, and natural light.</p>
+          <div class="service-icon">🪵</div>
+          <h3>Soffit &amp; Fascia</h3>
+          <p>Proper soffit and fascia installation protects your roofline and keeps moisture and pests out.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🌧️</div>
@@ -114,19 +131,24 @@
           <p>Seamless gutter installation and repair to keep water away from your foundation and landscaping.</p>
         </div>
         <div class="service-card">
+          <div class="service-icon">🌿</div>
+          <h3>Decks &amp; Outdoor</h3>
+          <p>Custom-built decks and outdoor living spaces crafted to maximize your enjoyment and home value.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🪧</div>
+          <h3>Fences</h3>
+          <p>Wood, vinyl, and more. We build fences that add privacy, security, and character to your property.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧱</div>
+          <h3>Concrete</h3>
+          <p>Driveways, patios, walkways, and more — poured and finished with care for long-lasting results.</p>
+        </div>
+        <div class="service-card">
           <div class="service-icon">🔨</div>
           <h3>Remodeling</h3>
           <p>Interior and full-home remodels — flooring, trim, bathrooms, and more. We bring your vision to life.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🪚</div>
-          <h3>Wood Repair</h3>
-          <p>Rotten and damaged wood replacement done right, with OSB and house wrap for lasting protection.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🛠️</div>
-          <h3>Handyman Services</h3>
-          <p>Need something fixed? We handle a wide range of home repairs with the same quality craftsmanship.</p>
         </div>
       </div>
     </div>
@@ -156,16 +178,14 @@
             <span class="stat-label">Satisfaction Goal</span>
           </div>
           <div class="why-img-box">
-            <div class="why-img-placeholder deck-img">
-              <span>Custom Deck Build</span>
-            </div>
+            <div class="why-img-bg"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BEFORE & AFTER / PORTFOLIO -->
+  <!-- BEFORE & AFTER -->
   <section class="section work" id="work">
     <div class="container">
       <div class="section-header">
@@ -174,7 +194,6 @@
         <p class="section-sub">Real projects. Real results. See what CTT Construction LLC can do for your home.</p>
       </div>
 
-      <!-- Featured transformation -->
       <div class="ba-featured">
         <div class="ba-label-row">
           <span class="ba-tag before-tag">BEFORE</span>
@@ -183,12 +202,12 @@
         </div>
         <div class="ba-images">
           <div class="ba-img-wrap">
-            <div class="ba-img before-house"></div>
+            <img src="images/before.jpg" alt="Home before CTT Construction renovation" class="ba-photo" />
             <span class="ba-caption-tag">Before</span>
           </div>
           <div class="ba-img-wrap">
-            <div class="ba-img after-house"></div>
-            <span class="ba-caption-tag after">After</span>
+            <img src="images/after.jpg" alt="Home after CTT Construction renovation" class="ba-photo" />
+            <span class="ba-caption-tag ba-caption-after">After</span>
           </div>
         </div>
         <div class="ba-details">
@@ -214,25 +233,6 @@
                 <li>✓ New front porch railing</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Gallery cards -->
-      <div class="gallery-grid">
-        <div class="gallery-card deck-pool-img">
-          <div class="gallery-overlay">
-            <span>Custom Deck &amp; Pool Surround</span>
-          </div>
-        </div>
-        <div class="gallery-card roofing-img">
-          <div class="gallery-overlay">
-            <span>Roof Replacement</span>
-          </div>
-        </div>
-        <div class="gallery-card siding-img">
-          <div class="gallery-overlay">
-            <span>Siding &amp; Exterior Renovation</span>
           </div>
         </div>
       </div>
@@ -287,11 +287,11 @@
     </div>
   </section>
 
-  <!-- CONTACT / CTA -->
+  <!-- CONTACT -->
   <section class="section contact" id="contact">
     <div class="container contact-inner">
       <div class="contact-info">
-        <p class="section-eyebrow light">Get In Touch</p>
+        <p class="section-eyebrow">Get In Touch</p>
         <h2>Ready to Start Your Project?</h2>
         <p class="contact-desc">Whether you need a minor repair or a complete home transformation, we're here to help. Contact us today for your <strong>free, no-obligation estimate.</strong></p>
         <div class="contact-details">
@@ -323,7 +323,6 @@
           <span>✓ No Obligation</span>
         </div>
       </div>
-
       <div class="contact-form-wrap">
         <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
           <h3>Request a Free Estimate</h3>
@@ -347,12 +346,12 @@
               <option value="">Select a service...</option>
               <option>Roofing</option>
               <option>Siding</option>
-              <option>Deck / Outdoor</option>
-              <option>Windows</option>
+              <option>Soffit &amp; Fascia</option>
               <option>Gutters</option>
+              <option>Deck / Outdoor</option>
+              <option>Fences</option>
+              <option>Concrete</option>
               <option>Remodeling</option>
-              <option>Wood Repair</option>
-              <option>Handyman Services</option>
               <option>Multiple Services</option>
               <option>Other</option>
             </select>
@@ -375,8 +374,19 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <p class="footer-logo"><span class="logo-ctt">CTT</span> Construction LLC</p>
-        <p class="footer-tagline">High-end craftsmanship. No shortcuts. Built to last.</p>
+        <div class="footer-logo-wrap">
+          <svg class="footer-logo-icon" viewBox="0 0 52 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="26,2 50,20 2,20" fill="none" stroke="#c9a84c" stroke-width="2.5"/>
+            <rect x="8" y="19" width="36" height="22" fill="none" stroke="#c9a84c" stroke-width="2"/>
+            <rect x="22" y="28" width="8" height="13" fill="#c9a84c"/>
+            <rect x="10" y="23" width="8" height="7" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+            <rect x="34" y="23" width="8" height="7" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+          </svg>
+          <div>
+            <p class="footer-logo-text"><span class="logo-ctt">C.T.T.</span> Construction LLC</p>
+            <p class="footer-tagline">High-end craftsmanship. No shortcuts. Built to last.</p>
+          </div>
+        </div>
       </div>
       <div class="footer-links">
         <a href="#services">Services</a>
@@ -387,10 +397,11 @@
       <div class="footer-contact">
         <a href="tel:2709771758">(270) 977-1758</a>
         <span>Madisonville, KY</span>
+        <span>Licensed &amp; Insured</span>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 CTT Construction LLC. All rights reserved. Licensed &amp; Insured.</p>
+      <p>&copy; 2025 CTT Construction LLC. All rights reserved.</p>
     </div>
   </footer>
 
